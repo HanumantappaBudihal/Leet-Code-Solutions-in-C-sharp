@@ -21,7 +21,10 @@ namespace LeetCode.Learn.Arrays101
             //FindNumbersWithEvenNumberOfDigits_Main(args);
 
             //3. Squares of a Sorted Array   
-            SquaresOfSortedArray_Main(args);
+            //SquaresOfSortedArray_Main(args);
+
+            //4.DuplicateZero(args)
+            DuplicateZeros_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -64,6 +67,31 @@ namespace LeetCode.Learn.Arrays101
             items = new int[] { -7, -3, 2, 3, 11 };
             //Expected result : {4,9,9,49,121}
             result1 = squaresOfSortedArray.SortedSquares(items);
+        }
+
+        static void DuplicateZeros_Main(string[] args)
+        {
+            DuplicateZerosProblem duplicateZerosProblem = new DuplicateZerosProblem();
+
+            //Test Case 1
+            //Input:[1,0,2,3,0,4,5,0]
+            //Output: null
+            //Explanation: After calling your function, the input array is modified to: [1,0,0,2,3,0,0,4]
+            var items = new int[] { 1, 0, 2, 3, 0, 4, 5, 0 };
+            duplicateZerosProblem.DuplicateZeros(items);
+
+            //Test Case 2
+            items = new int[] { 1, 2, 3 };
+            //Expected result : {1, 2, 3}
+            //Explanation: After calling your function, the input array is modified to: [1,2,3]
+            duplicateZerosProblem.DuplicateZeros(items);
+
+            //Test Case 3
+            items = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+            //Expected result : {0,0,0,0,0,0,0}
+            //Explanation: After calling your function, the input array is modified to: [0,0,0,0,0,0,0]
+            duplicateZerosProblem.DuplicateZeros(items);
+            
         }
     }
 }
