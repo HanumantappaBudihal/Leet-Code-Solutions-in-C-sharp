@@ -18,7 +18,10 @@ namespace LeetCode.Learn.Arrays101
             //MaxConsecutiveOnes_Main(args);
 
             //2. Find Numbers with Even Number of Digits    
-            FindNumbersWithEvenNumberOfDigits_Main(args);
+            //FindNumbersWithEvenNumberOfDigits_Main(args);
+
+            //3. Squares of a Sorted Array   
+            SquaresOfSortedArray_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -45,6 +48,22 @@ namespace LeetCode.Learn.Arrays101
             var result1 = findNumbersWithEvenNumberOfDigits.FindNumbers(items);
 
             //Test Case 2
+        }
+
+        //3. Squares of a Sorted Array   
+        static void SquaresOfSortedArray_Main(string[] args)
+        {
+            SquaresOfSortedArray squaresOfSortedArray = new SquaresOfSortedArray();
+
+            // Test Case 1
+            var items = new int[] { -4, -1, 0, 3, 10 };
+            //Expected result : {0,1,9,16,100}
+            var result1 = squaresOfSortedArray.SortedSquares(items);
+
+            //Test Case 2
+             items = new int[] { -7, -3, 2, 3, 11 };
+            //Expected result : {4,9,9,49,121}
+            result1 = squaresOfSortedArray.SortedSquares(items);
         }
     }
 }
