@@ -12,38 +12,38 @@ namespace LeetCode.Learn.Arrays101.Problems
         public int[] SortedSquares(int[] numbers)
         {
             int length = numbers.Length;
-            int j = 0;
-            while (j < length && numbers[j] < 0)
-                j++;
-            int i = j - 1;
+            int postiveNumberIndex = 0;
+            while (postiveNumberIndex < length && numbers[postiveNumberIndex] < 0)
+                postiveNumberIndex++;
+            int negativeNumberIndex = postiveNumberIndex - 1;
 
             int[] result = new int[length];
-            int t = 0;
+            int resultIndex = 0;
 
-            while (i >= 0 && j < length)
+            while (negativeNumberIndex >= 0 && postiveNumberIndex < length)
             {
-                if (numbers[i] * numbers[i] < numbers[j] * numbers[j])
+                if (numbers[negativeNumberIndex] * numbers[negativeNumberIndex] < numbers[postiveNumberIndex] * numbers[postiveNumberIndex])
                 {
-                    result[t++] = numbers[i] * numbers[i];
-                    i--;
+                    result[resultIndex++] = numbers[negativeNumberIndex] * numbers[negativeNumberIndex];
+                    negativeNumberIndex--;
                 }
                 else
                 {
-                    result[t++] = numbers[j] * numbers[j];
-                    j++;
+                    result[resultIndex++] = numbers[postiveNumberIndex] * numbers[postiveNumberIndex];
+                    postiveNumberIndex++;
                 }
             }
 
-            while (i >= 0)
+            while (negativeNumberIndex >= 0)
             {
-                result[t++] = numbers[i] * numbers[i];
-                i--;
+                result[resultIndex++] = numbers[negativeNumberIndex] * numbers[negativeNumberIndex];
+                negativeNumberIndex--;
             }
 
-            while (j < length)
+            while (postiveNumberIndex < length)
             {
-                result[t++] = numbers[j] * numbers[j];
-                j++;
+                result[resultIndex++] = numbers[postiveNumberIndex] * numbers[postiveNumberIndex];
+                postiveNumberIndex++;
             }
 
             return result;
