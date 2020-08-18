@@ -24,7 +24,10 @@ namespace LeetCode.Learn.Arrays101
             //SquaresOfSortedArray_Main(args);
 
             //4.DuplicateZero(args)
-            DuplicateZeros_Main(args);
+            //DuplicateZeros_Main(args);
+
+            //5.RemoveElement_Main
+            RemoveElement_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -91,7 +94,24 @@ namespace LeetCode.Learn.Arrays101
             //Expected result : {0,0,0,0,0,0,0}
             //Explanation: After calling your function, the input array is modified to: [0,0,0,0,0,0,0]
             duplicateZerosProblem.DuplicateZeros(items);
-            
+        }
+
+        static void RemoveElement_Main(string[] args)
+        {
+            RemoveElementProblem removeElementProblem = new RemoveElementProblem();
+
+            //Test Case 1
+            //Given nums = [3, 2, 2, 3], val = 3,
+            //Your function should return length = 2, with the first two elements of nums being 2.
+            //It doesn't matter what you leave beyond the returned length.     var items = new int[] { 1, 0, 2, 3, 0, 4, 5, 0 };
+            var items = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
+            int val = 2;
+            removeElementProblem.RemoveElement(items, val);
+
+            //test 2
+             items = new int[] { 3, 2, 2, 3 };
+             val = 3;
+            removeElementProblem.RemoveElement(items, val);
         }
     }
 }
