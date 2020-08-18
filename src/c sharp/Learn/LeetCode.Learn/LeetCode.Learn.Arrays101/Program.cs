@@ -27,7 +27,10 @@ namespace LeetCode.Learn.Arrays101
             //DuplicateZeros_Main(args);
 
             //5.RemoveElement_Main
-            RemoveElement_Main(args);
+            //RemoveElement_Main(args);
+
+            //6.RemoveDuplicatesFromSortedArray
+            RemoveDuplicatesFromSortedArray_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -72,6 +75,7 @@ namespace LeetCode.Learn.Arrays101
             result1 = squaresOfSortedArray.SortedSquares(items);
         }
 
+        //4.
         static void DuplicateZeros_Main(string[] args)
         {
             DuplicateZerosProblem duplicateZerosProblem = new DuplicateZerosProblem();
@@ -96,6 +100,7 @@ namespace LeetCode.Learn.Arrays101
             duplicateZerosProblem.DuplicateZeros(items);
         }
 
+        //5.
         static void RemoveElement_Main(string[] args)
         {
             RemoveElementProblem removeElementProblem = new RemoveElementProblem();
@@ -109,9 +114,26 @@ namespace LeetCode.Learn.Arrays101
             removeElementProblem.RemoveElement(items, val);
 
             //test 2
-             items = new int[] { 3, 2, 2, 3 };
-             val = 3;
+            items = new int[] { 3, 2, 2, 3 };
+            val = 3;
             removeElementProblem.RemoveElement(items, val);
+        }
+
+        //6.RemoveDuplicatesFromSortedArray
+        static void RemoveDuplicatesFromSortedArray_Main(string[] args)
+        {
+            RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
+
+            //Test Case 1
+            //Given nums = [1,1,2]
+            //Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
+            //It doesn't matter what you leave beyond the returned length.            var items = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };          
+            var items = new int[] { 1,1,2 };
+            removeDuplicatesFromSortedArray.RemoveDuplicates(items);
+
+            //test 2
+            items = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+            removeDuplicatesFromSortedArray.RemoveDuplicates(items);
         }
     }
 }
