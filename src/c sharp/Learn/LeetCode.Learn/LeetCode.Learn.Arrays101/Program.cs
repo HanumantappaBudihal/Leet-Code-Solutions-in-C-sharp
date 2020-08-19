@@ -42,7 +42,10 @@ namespace LeetCode.Learn.Arrays101
             //ReplaceElementsWithGreatestElementOnRightSide_Main(args);
 
             //10.MoveZeroesProblem
-            MoveZeroesProblem_Main(args);
+            //MoveZeroesProblem_Main(args);
+
+            //11.SortArrayByParityProblem
+            SortArrayByParityProblem_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -236,6 +239,18 @@ namespace LeetCode.Learn.Arrays101
             //Output:[1,3,12,0,0]
             var items = new int[] { 0, 1, 0, 3, 12 };
             moveZeroesProblem.MoveZeroes(items);
+        }
+
+        //11.SortArrayByParityProblem
+        static void SortArrayByParityProblem_Main(string[] args)
+        {
+            SortArrayByParityProblem sortArrayByParityProblem = new SortArrayByParityProblem();
+
+            //Input: [3,1,2,4]
+            //Output: [2,4,3,1]
+            //The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+            var items = new int[] { 3, 1, 2, 4};
+            sortArrayByParityProblem.SortArrayByParity(items);
         }
     }
 }
