@@ -30,7 +30,10 @@ namespace LeetCode.Learn.Arrays101
             //RemoveElement_Main(args);
 
             //6.RemoveDuplicatesFromSortedArray
-            RemoveDuplicatesFromSortedArray_Main(args);
+            //RemoveDuplicatesFromSortedArray_Main(args);
+
+            //7.CheckIfNAndItsDoubleExist
+            CheckIfNAndItsDoubleExist_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -128,12 +131,50 @@ namespace LeetCode.Learn.Arrays101
             //Given nums = [1,1,2]
             //Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
             //It doesn't matter what you leave beyond the returned length.            var items = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };          
-            var items = new int[] { 1,1,2 };
+            var items = new int[] { 1, 1, 2 };
             removeDuplicatesFromSortedArray.RemoveDuplicates(items);
 
             //test 2
             items = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
             removeDuplicatesFromSortedArray.RemoveDuplicates(items);
+        }
+
+        //7.CheckIfNAndItsDoubleExist
+
+        static void CheckIfNAndItsDoubleExist_Main(string[] args)
+        {
+            CheckIfNAndItsDoubleExist checkIfNAndItsDoubleExist = new CheckIfNAndItsDoubleExist();
+
+            //Test Case 1
+            //Input: arr = [10, 2, 5, 3]
+            //Output: true
+            //Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.var items = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };          
+            var items = new int[] { 10, 2, 5, 3 };
+            checkIfNAndItsDoubleExist.CheckIfExist(items);
+
+            //Test 2
+            //Input: arr = [7, 1, 14, 11]
+            //Output: true
+            //Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
+            items = new int[] { 7, 1, 14, 11 };
+            checkIfNAndItsDoubleExist.CheckIfExist(items);
+
+            //Test 3
+            //Input: arr = [3, 1, 7, 11]
+            //Output: false
+            //Explanation: In this case does not exist N and M, such that N = 2 * M.
+            items = new int[] { 3, 1, 7, 11 };
+            checkIfNAndItsDoubleExist.CheckIfExist(items);
+
+            //Edge case 1
+            //[-2,0,10,-19,4,6,-8] : expected ans : true
+            items = new int[] { -2, 0, 10, -19, 4, 6, -8 };
+            checkIfNAndItsDoubleExist.CheckIfExist(items);
+
+            //Test 5 :
+            //[0,0] Expected output : true
+            items = new int[] { 0, 0 };
+            checkIfNAndItsDoubleExist.CheckIfExist(items);
         }
     }
 }
