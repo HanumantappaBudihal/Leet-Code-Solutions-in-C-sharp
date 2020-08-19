@@ -8,6 +8,7 @@ namespace LeetCode.Learn.Arrays101.Problems
         public bool CheckIfExist_Method2(int[] numbers)
         {
             int length = numbers.Length;
+
             for (int i = 0; i < length; i++)
             {
                 for (int j = 0; j < length; j++)
@@ -16,6 +17,7 @@ namespace LeetCode.Learn.Arrays101.Problems
                         return true;
                 }
             }
+
             return false;
         }
 

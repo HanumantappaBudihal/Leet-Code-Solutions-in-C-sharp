@@ -33,7 +33,10 @@ namespace LeetCode.Learn.Arrays101
             //RemoveDuplicatesFromSortedArray_Main(args);
 
             //7.CheckIfNAndItsDoubleExist
-            CheckIfNAndItsDoubleExist_Main(args);
+            //CheckIfNAndItsDoubleExist_Main(args);
+
+            //8.ValidMountainArrayProblem
+            ValidMountainArrayProblem_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -140,7 +143,6 @@ namespace LeetCode.Learn.Arrays101
         }
 
         //7.CheckIfNAndItsDoubleExist
-
         static void CheckIfNAndItsDoubleExist_Main(string[] args)
         {
             CheckIfNAndItsDoubleExist checkIfNAndItsDoubleExist = new CheckIfNAndItsDoubleExist();
@@ -175,6 +177,36 @@ namespace LeetCode.Learn.Arrays101
             //[0,0] Expected output : true
             items = new int[] { 0, 0 };
             checkIfNAndItsDoubleExist.CheckIfExist(items);
+        }
+
+        //8.ValidMountainArrayProblem
+        static void ValidMountainArrayProblem_Main(string[] args)
+        {
+            ValidMountainArrayProblem ValidMountainArrayProblem = new ValidMountainArrayProblem();
+
+            //Test Case 1
+            //Input: [2,1]
+            //Output: false
+            var items = new int[] { 2, 1 };
+            var result = ValidMountainArrayProblem.ValidMountainArray(items);
+
+            //Test 2
+            //Input: [3,5,5]
+            //Output: false            
+            items = new int[] { 3, 5, 5 };
+            result = ValidMountainArrayProblem.ValidMountainArray(items);
+
+            //Test 3
+            //Input: arr = [0,3,2,1]
+            //Output: true
+            items = new int[] { 0, 3, 2, 1 };
+            result = ValidMountainArrayProblem.ValidMountainArray(items);
+
+            //Test4
+            //Input : [9,8,7,6,5,4,3,2,1,0]
+            //output : false
+            items = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+            result = ValidMountainArrayProblem.ValidMountainArray(items);
         }
     }
 }
