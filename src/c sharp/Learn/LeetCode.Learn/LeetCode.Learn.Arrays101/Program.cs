@@ -39,7 +39,10 @@ namespace LeetCode.Learn.Arrays101
             //ValidMountainArrayProblem_Main(args);
 
             //9.ReplaceElementsWithGreatestElementOnRightSide
-            ReplaceElementsWithGreatestElementOnRightSide_Main(args);
+            //ReplaceElementsWithGreatestElementOnRightSide_Main(args);
+
+            //10.MoveZeroesProblem
+            MoveZeroesProblem_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -222,6 +225,17 @@ namespace LeetCode.Learn.Arrays101
             //Output:[18,6,6,6,1,-1]
             var items = new int[] { 17, 18, 5, 4, 6, 1 };
             var result = replaceElementsWithGreatestElementOnRightSide.ReplaceElements(items);
+        }
+
+        //10.MoveZeroesProblem
+        static void MoveZeroesProblem_Main(string[] args)
+        {
+            MoveZeroesProblem moveZeroesProblem = new MoveZeroesProblem();
+            //Test Case 1
+            //Input: arr = [0,1,0,3,12]
+            //Output:[1,3,12,0,0]
+            var items = new int[] { 0, 1, 0, 3, 12 };
+            moveZeroesProblem.MoveZeroes(items);
         }
     }
 }
