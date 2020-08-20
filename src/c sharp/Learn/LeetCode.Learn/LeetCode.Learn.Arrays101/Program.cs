@@ -51,7 +51,10 @@ namespace LeetCode.Learn.Arrays101
             //HeightCheckerProblem_Main(args);
 
             //13.ThirdMaximumNumber
-            ThirdMaximumNumber_Main(args);
+            //ThirdMaximumNumber_Main(args);
+
+            //14.FindAllNumbersDisappearedInAnArray
+            FindAllNumbersDisappearedInAnArray_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -319,6 +322,20 @@ namespace LeetCode.Learn.Arrays101
             items = new int[] { 1, 2, -2147483648 };
             //out put : -2147483648 // Int32.MinValue
             result = thirdMaximumNumber.ThirdMax(items);
+        }
+
+        //14.FindAllNumbersDisappearedInAnArray
+        static void FindAllNumbersDisappearedInAnArray_Main(string[] args)
+        {
+            FindAllNumbersDisappearedInAnArray findAllNumbersDisappearedInAnArray = new FindAllNumbersDisappearedInAnArray();
+
+            /*
+             * Input:
+              [4,3,2,7,8,2,3,1]
+              Output:[5,6]            
+            * */
+            var items = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
+            var result = findAllNumbersDisappearedInAnArray.FindDisappearedNumbers(items);
         }
     }
 }
