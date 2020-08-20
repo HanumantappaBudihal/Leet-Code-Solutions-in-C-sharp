@@ -4,3 +4,8 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/
 2.Imporant Points
 https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3220/
 
+3. Imp problem statements
+https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3231/
+https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3270/
+https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3261/
+https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3251/
