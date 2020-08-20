@@ -45,7 +45,13 @@ namespace LeetCode.Learn.Arrays101
             //MoveZeroesProblem_Main(args);
 
             //11.SortArrayByParityProblem
-            SortArrayByParityProblem_Main(args);
+            //SortArrayByParityProblem_Main(args);
+
+            //12.HeightCheckerProblem
+            //HeightCheckerProblem_Main(args);
+
+            //13.ThirdMaximumNumber
+            ThirdMaximumNumber_Main(args);
         }
 
         //1. Max Consecutive Ones       
@@ -249,8 +255,70 @@ namespace LeetCode.Learn.Arrays101
             //Input: [3,1,2,4]
             //Output: [2,4,3,1]
             //The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
-            var items = new int[] { 3, 1, 2, 4};
+            var items = new int[] { 3, 1, 2, 4 };
             sortArrayByParityProblem.SortArrayByParity(items);
+        }
+
+        //12.HeightCheckerProblem
+        private static void HeightCheckerProblem_Main(string[] args)
+        {
+            HeightCheckerProblem heightCheckerProblem = new HeightCheckerProblem();
+
+            /*
+             * Input: heights = [1,1,4,2,1,3]
+               Output: 3
+               Explanation: 
+               Current array : [1,1,4,2,1,3]
+               Target array  : [1,1,1,2,3,4]
+               On index 2 (0-based) we have 4 vs 1 so we have to move this student.
+               On index 4 (0-based) we have 1 vs 3 so we have to move this student.
+               On index 5 (0-based) we have 3 vs 4 so we have to move this student.
+             */
+            var items = new int[] { 1, 1, 4, 2, 1, 3 };
+            heightCheckerProblem.HeightChecker(items);
+        }
+
+        //13.
+        static void ThirdMaximumNumber_Main(string[] args)
+        {
+            ThirdMaximumNumber thirdMaximumNumber = new ThirdMaximumNumber();
+            /*
+             * Example 1:
+               Input: [3, 2, 1,4]
+               Output: 2
+               Explanation: The third maximum is 1.
+             */
+            var items = new int[] { 3, 2, 1, 4 };
+            var result = thirdMaximumNumber.ThirdMax(items);
+
+            /*
+             * Example 2:
+               Input: [1, 2]
+               Output: 2
+               Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
+             */
+            items = new int[] { 1, 2 };
+            result = thirdMaximumNumber.ThirdMax(items);
+
+            /*
+             Input: [2, 2, 3, 1]
+             Output: 1
+             Explanation: Note that the third maximum here means the third maximum distinct number.
+             Both numbers with value 2 are both considered as second maximum.
+             */
+
+            items = new int[] { 2, 2, 3, 1 };
+            result = thirdMaximumNumber.ThirdMax(items);
+
+            //Test 4 
+            items = new int[] { 1, 1, 2 };
+            //out put : 2
+            result = thirdMaximumNumber.ThirdMax(items);
+
+            //Test 5
+            items = new int[] { 1, 2, -2147483648 };
+            //out put : -2147483648 // Int32.MinValue
+            result = thirdMaximumNumber.ThirdMax(items);
         }
     }
 }
