@@ -1,0 +1,5 @@
+﻿Problem statement :https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+----------------------------------------------------
+
+----------------------------------------------------
+Solution : https://leetcode.com/submissions/detail/384358101/

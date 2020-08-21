@@ -18,8 +18,42 @@ namespace LeetCode.Learn.LinkedList
             //LinkedListCycle2_Main();
 
             //4.IntersectionOfTwoLinkedLists
-            IntersectionOfTwoLinkedLists_Main();
+            //IntersectionOfTwoLinkedLists_Main();
 
+            //5. RemoveNthNodeFromEndOfList
+            RemoveNthNodeFromEndOfList_Main();
+
+        }
+
+        private static void RemoveNthNodeFromEndOfList_Main()
+        {
+            RemoveNthNodeFromEndOfList removeNthNodeFromEndOfList = new RemoveNthNodeFromEndOfList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(8);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            //Test case 1 : Positive case -> Delete 2nd last
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 2);
+
+            //Test case 2 : Delete the last element
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 1);
+
+            //Test case 3 : when n=0; Don't delete any items
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 0);
+
+            //Test case : delete the Head > only 3  nodes left in list
+            var result = removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 3);
         }
 
         private static void IntersectionOfTwoLinkedLists_Main()
