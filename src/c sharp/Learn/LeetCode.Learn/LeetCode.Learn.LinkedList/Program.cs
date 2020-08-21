@@ -15,8 +15,51 @@ namespace LeetCode.Learn.LinkedList
             //LinkedListCycle_Main();
 
             //3.Linked list cycle 2
-            LinkedListCycle2_Main();
+            //LinkedListCycle2_Main();
 
+            //4.IntersectionOfTwoLinkedLists
+            IntersectionOfTwoLinkedLists_Main();
+
+        }
+
+        private static void IntersectionOfTwoLinkedLists_Main()
+        {
+            IntersectionOfTwoLinkedLists intersectionOfTwoLinkedLists = new IntersectionOfTwoLinkedLists();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+            ListNode NodeA8 = new ListNode(8);
+            NodeA1.next = NodeA8;
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+
+            ListNode NodeBHead = new ListNode(5);
+
+            ListNode NodeB6 = new ListNode(6);
+            NodeBHead.next = NodeB6;
+
+            ListNode NodeB1 = new ListNode(1);
+            NodeB6.next = NodeB1;
+
+            //Interction
+            NodeB1.next = NodeA8;
+            var result = intersectionOfTwoLinkedLists.GetIntersectionNode(NodeAHead, NodeBHead);
+
+
+            //Disconnecting lists from interction
+            NodeA1.next = null;
+            NodeB1.next = null;
+            result = intersectionOfTwoLinkedLists.GetIntersectionNode(NodeAHead, NodeBHead);
+
+            //case 3
+            NodeAHead.next = null;
+            NodeB6.next = NodeAHead;
+            result = intersectionOfTwoLinkedLists.GetIntersectionNode(NodeAHead, NodeAHead);
         }
 
         //3.Linked list cycle 3

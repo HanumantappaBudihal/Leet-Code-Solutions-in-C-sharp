@@ -4,3 +4,7 @@ https://leetcode.com/problems/linked-list-cycle/solution/
 2. Linked List cycle 2
 https://leetcode.com/problems/linked-list-cycle-ii/
 https://www.youtube.com/watch?v=UfAoCstdoWI
+
+3.Intersection of Two linked list
+https://leetcode.com/explore/learn/card/linked-list/214/two-pointer-technique/1215/
+Solution : https://leetcode.com/submissions/detail/384334551/
