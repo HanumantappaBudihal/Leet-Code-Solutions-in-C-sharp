@@ -21,8 +21,33 @@ namespace LeetCode.Learn.LinkedList
             //IntersectionOfTwoLinkedLists_Main();
 
             //5. RemoveNthNodeFromEndOfList
-            RemoveNthNodeFromEndOfList_Main();
+            //RemoveNthNodeFromEndOfList_Main();
 
+            //6. ReverseLinkedList
+            ReverseLinkedList_Main();
+
+        }
+
+        private static void ReverseLinkedList_Main()
+        {
+            ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(8);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            //Test case 1 : Positive case -> Delete 2nd last
+            var result = reverseLinkedList.ReverseList(NodeAHead);
         }
 
         private static void RemoveNthNodeFromEndOfList_Main()
