@@ -9,8 +9,21 @@ namespace LeetCode.Learn.LinkedList
         {
             Console.WriteLine("Hello World!");
             //1.DesingLinkedList_Main
-            DesingLinkedList_Main();
+            //DesingLinkedList_Main();
 
+            //2.Linked List Cycle
+            //LinkedListCycle_Main();
+
+            //3.Linked list cycle 2
+            LinkedListCycle2_Main();
+
+        }
+
+        //3.Linked list cycle 3
+        private static void LinkedListCycle2_Main()
+        {
+            //TODO : Need to apply the changes
+            throw new NotImplementedException();
         }
 
         //1.Desing LinkedList
