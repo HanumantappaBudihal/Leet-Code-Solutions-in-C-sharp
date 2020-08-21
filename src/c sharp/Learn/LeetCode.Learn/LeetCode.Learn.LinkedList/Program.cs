@@ -18,8 +18,97 @@ namespace LeetCode.Learn.LinkedList
             //LinkedListCycle2_Main();
 
             //4.IntersectionOfTwoLinkedLists
-            IntersectionOfTwoLinkedLists_Main();
+            //IntersectionOfTwoLinkedLists_Main();
 
+            //5. RemoveNthNodeFromEndOfList
+            //RemoveNthNodeFromEndOfList_Main();
+
+            //6. ReverseLinkedList
+            //ReverseLinkedList_Main();
+
+            //7. RemoveLinkedListElements
+            RemoveLinkedListElements_Main();
+        }
+
+        private static void RemoveLinkedListElements_Main()
+        {
+            RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(1);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            //ListNode NodeA5 = new ListNode(5);
+            //NodeA4.next = NodeA5;
+
+
+            var result = removeLinkedListElements.RemoveElements(NodeAHead, 4);
+
+            //Think about the different test cases
+            //Edage  cases
+            //Input:  [1,2,2,1] , 2            
+            //Expected: [1,1]
+
+        }
+
+        private static void ReverseLinkedList_Main()
+        {
+            ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(8);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            //Test case 1 : Positive case -> Delete 2nd last
+            var result = reverseLinkedList.ReverseList(NodeAHead);
+        }
+
+        private static void RemoveNthNodeFromEndOfList_Main()
+        {
+            RemoveNthNodeFromEndOfList removeNthNodeFromEndOfList = new RemoveNthNodeFromEndOfList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(4);
+
+            ListNode NodeA1 = new ListNode(1);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(8);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            //Test case 1 : Positive case -> Delete 2nd last
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 2);
+
+            //Test case 2 : Delete the last element
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 1);
+
+            //Test case 3 : when n=0; Don't delete any items
+            removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 0);
+
+            //Test case : delete the Head > only 3  nodes left in list
+            var result = removeNthNodeFromEndOfList.RemoveNthFromEnd(NodeAHead, 3);
         }
 
         private static void IntersectionOfTwoLinkedLists_Main()
