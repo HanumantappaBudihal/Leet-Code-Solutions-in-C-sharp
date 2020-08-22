@@ -27,7 +27,31 @@ namespace LeetCode.Learn.LinkedList
             //ReverseLinkedList_Main();
 
             //7. RemoveLinkedListElements
-            RemoveLinkedListElements_Main();
+            //RemoveLinkedListElements_Main();
+
+            //8. OddEvenLinkedList
+            OddEvenLinkedList_Main();
+        }
+
+        private static void OddEvenLinkedList_Main()
+        {
+            OddEvenLinkedList oddEvenLinkedList = new OddEvenLinkedList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(1);
+
+            ListNode NodeA1 = new ListNode(2);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(3);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            var result = oddEvenLinkedList.OddEvenList(NodeAHead);
         }
 
         private static void RemoveLinkedListElements_Main()
