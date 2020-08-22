@@ -15,13 +15,13 @@ namespace LeetCode.Learn.LinkedList.Problems
             var currentNode = headNode;
             while (currentNode.next != null)
             {
-                if (currentNode.next.value == value)
+                if (currentNode.next.val == value)
                     currentNode.next = currentNode.next.next;
                 else
                     currentNode = currentNode.next;
             }
 
-            return headNode.value != value ? headNode : headNode.next;
+            return headNode.val != value ? headNode : headNode.next;
         }
 
 

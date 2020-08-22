@@ -30,7 +30,43 @@ namespace LeetCode.Learn.LinkedList
             //RemoveLinkedListElements_Main();
 
             //8. OddEvenLinkedList
-            OddEvenLinkedList_Main();
+            //OddEvenLinkedList_Main();
+
+            //9.PalindromeLinkedList
+            PalindromeLinkedList_Main();
+        }
+
+        private static void PalindromeLinkedList_Main()
+        {
+            PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(1);
+
+            ListNode NodeA1 = new ListNode(2);
+            NodeAHead.next = NodeA1;
+
+
+            ListNode NodeA8 = new ListNode(2);
+            NodeA1.next = NodeA8;
+
+            //ListNode NodeA4 = new ListNode(1);
+            //NodeA8.next = NodeA4;
+
+            //ListNode NodeA5 = new ListNode(5);
+            //NodeA4.next = NodeA5;
+
+            var result = palindromeLinkedList.IsPalindrome(NodeAHead);
+
+            //Test case 2
+            ListNode NodeBHead = new ListNode(-123);
+
+            ListNode NodeB1 = new ListNode(-123);
+            NodeBHead.next = NodeB1;
+
+            //ListNode NodeB8 = new ListNode(1);
+            //NodeB1.next = NodeB8;
+
+            result = palindromeLinkedList.IsPalindrome(NodeBHead);
         }
 
         private static void OddEvenLinkedList_Main()

@@ -16,11 +16,11 @@ namespace LeetCode.Learn.LinkedList.Problems
 
     public class ListNode
     {
-        public int value;
+        public int val;
         public ListNode next;
         public ListNode(int x)
         {
-            value = x;
+            val = x;
             next = null;
         }
     }
