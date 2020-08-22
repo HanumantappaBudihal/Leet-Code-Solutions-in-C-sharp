@@ -33,7 +33,40 @@ namespace LeetCode.Learn.LinkedList
             //OddEvenLinkedList_Main();
 
             //9.PalindromeLinkedList
-            PalindromeLinkedList_Main();
+            //PalindromeLinkedList_Main();
+
+            //10.MergeTwoSortedLists
+            MergeTwoSortedLists_Main();
+        }
+
+        private static void MergeTwoSortedLists_Main()
+        {
+            MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(1);
+            ListNode NodeA1 = new ListNode(3);
+            NodeAHead.next = NodeA1;
+            ListNode NodeA8 = new ListNode(5);
+            NodeA1.next = NodeA8;
+            ListNode NodeA4 = new ListNode(7);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(9);
+            NodeA4.next = NodeA5;
+
+
+            ListNode NodeBHead = new ListNode(2);
+
+            ListNode NodeB6 = new ListNode(6);
+            NodeBHead.next = NodeB6;
+
+            ListNode NodeB1 = new ListNode(10);
+            NodeB6.next = NodeB1;
+
+            //Interction
+            NodeB1.next = NodeA8;
+            var result = mergeTwoSortedLists.MergeTwoLists(NodeAHead, NodeBHead);
+
         }
 
         private static void PalindromeLinkedList_Main()
