@@ -36,7 +36,88 @@ namespace LeetCode.Learn.LinkedList
             //PalindromeLinkedList_Main();
 
             //10.MergeTwoSortedLists
-            MergeTwoSortedLists_Main();
+            //MergeTwoSortedLists_Main();
+
+            //11  Add two numbers
+            AddTwoNumbersProblem_Main();
+        }
+
+        private static void AddTwoNumbersProblem_Main()
+        {
+            AddTwoNumbersProblem addTwoNumbersProblem = new AddTwoNumbersProblem();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(1);
+            ListNode NodeA1 = new ListNode(3);
+            NodeAHead.next = NodeA1;
+            ListNode NodeA8 = new ListNode(5);
+            NodeA1.next = NodeA8;
+            //ListNode NodeA4 = new ListNode(7);
+            //NodeA8.next = NodeA4;
+
+            //ListNode NodeA5 = new ListNode(9);
+            //NodeA4.next = NodeA5;
+
+
+            ListNode NodeBHead = new ListNode(2);
+
+            ListNode NodeB6 = new ListNode(6);
+            NodeBHead.next = NodeB6;
+
+            ListNode NodeB1 = new ListNode(1);
+            NodeB6.next = NodeB1;
+
+            //Interction
+
+            var result = addTwoNumbersProblem.AddTwoNumbers(NodeAHead, NodeBHead);
+
+            //Test 2
+            /*
+             * Input:
+                [5]
+                [5]
+              
+                Expected:
+                [0,1]*/
+            NodeAHead = new ListNode(5);
+            //NodeA1 = new ListNode(3);
+            //NodeAHead.next = NodeA1;
+            //NodeA8 = new ListNode(5);
+            //NodeA1.next = NodeA8;
+            //ListNode NodeA4 = new ListNode(7);
+            //NodeA8.next = NodeA4;
+
+            //ListNode NodeA5 = new ListNode(9);
+            //NodeA4.next = NodeA5;
+
+
+            NodeBHead = new ListNode(5);
+
+            //NodeB6 = new ListNode(6);
+            //NodeBHead.next = NodeB6;
+
+            //NodeB1 = new ListNode(1);
+            //NodeB6.next = NodeB1;
+
+            //Interction
+
+            result = addTwoNumbersProblem.AddTwoNumbers(NodeAHead, NodeBHead);
+
+            //Test case 3
+            /*Input:
+            [1,8]
+            [0]
+            Output:
+                    [8,1]
+            Expected:
+                     [1,8] */
+
+            NodeAHead = new ListNode(1);
+            NodeA1 = new ListNode(8);
+            NodeAHead.next = NodeA1;
+
+            NodeBHead = new ListNode(0);
+
+            result = addTwoNumbersProblem.AddTwoNumbers(NodeAHead, NodeBHead);
         }
 
         private static void MergeTwoSortedLists_Main()
