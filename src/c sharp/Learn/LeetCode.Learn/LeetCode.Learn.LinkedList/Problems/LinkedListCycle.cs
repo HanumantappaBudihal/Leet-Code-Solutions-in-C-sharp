@@ -14,17 +14,7 @@ namespace LeetCode.Learn.LinkedList.Problems
         How about other cases? For example, we have not considered cases where the fast runner is two or three steps behind the slow runner yet. This is simple, because in the next or next's next iteration, this case will be reduced to case A mentioned above.
     */
 
-    public class ListNode
-    {
-        public int value;
-        public ListNode next;
-        public ListNode(int x)
-        {
-            value = x;
-            next = null;
-        }
-    }
-
+  
     class LinkedListCycle
     {
         public bool HasCycle(ListNode head)

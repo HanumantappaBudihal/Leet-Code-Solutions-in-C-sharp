@@ -19,8 +19,11 @@ namespace LeetCode.Learn.LinkedList.Problems
 
             while (currentNode != null)
             {
+                //Reverse the link
                 nextNode = currentNode.next;
                 currentNode.next = previousNode;
+
+                //data for next iteration
                 previousNode = currentNode;
                 currentNode = nextNode;
             }
