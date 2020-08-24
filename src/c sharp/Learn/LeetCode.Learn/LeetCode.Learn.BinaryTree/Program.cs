@@ -30,7 +30,36 @@ namespace LeetCode.Learn.BinaryTree
             //BinaryTreePreorderTraversal_Main();
 
             //2.BinaryTreeInorderTraversal
-            BinaryTreeInorderTraversal_Main();
+            //BinaryTreeInorderTraversal_Main();
+
+            //3.BinaryTreePostorderTraversal
+            BinaryTreePostorderTraversal_Main();
+        }
+
+        private static void BinaryTreePostorderTraversal_Main()
+        {
+            BinaryTreePostorderTraversal  binaryTreePostorderTraversal = new BinaryTreePostorderTraversal();
+
+            //Test 1
+            /*Input: [1,null,2,3]
+            1
+             \
+              2
+             /
+            3
+            Output: [3,2,1]
+            */
+
+            TreeNode rootNode = new TreeNode(1);
+
+            TreeNode rootRightChild1 = new TreeNode(2);
+            rootNode.right = rootRightChild1;
+
+            //Assign the left child to rootRightChild
+            TreeNode rightChild1Left = new TreeNode(3);
+            rootRightChild1.left = rightChild1Left;
+
+            var result = binaryTreePostorderTraversal.PostorderTraversal(rootNode);
         }
 
         private static void BinaryTreeInorderTraversal_Main()
