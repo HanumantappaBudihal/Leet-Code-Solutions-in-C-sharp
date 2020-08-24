@@ -1,0 +1,6 @@
+﻿Problem statement : https://leetcode.com/explore/learn/card/linked-list/213/conclusion/1225/
+
+---------------------------------------------------------
+
+--------------------------------------------------------
+My solution : https://leetcode.com/submissions/detail/385621233/
