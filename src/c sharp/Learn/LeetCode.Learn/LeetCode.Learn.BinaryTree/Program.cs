@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Learn.BinaryTree.Problems;
+using System;
 
 namespace LeetCode.Learn.BinaryTree
 {
@@ -24,6 +25,35 @@ namespace LeetCode.Learn.BinaryTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            //1.BinaryTreePreorderTraversal
+            BinaryTreePreorderTraversal_Main();
+        }
+
+        private static void BinaryTreePreorderTraversal_Main()
+        {
+            BinaryTreePreorderTraversal binaryTreePreorderTraversal = new BinaryTreePreorderTraversal();
+
+            //Test 1
+            /*Input: [1,null,2,3]
+            1
+             \
+              2
+             /
+            3
+            Output: [1,2,3]
+            */
+
+            TreeNode rootNode = new TreeNode(1);
+
+            TreeNode rootRightChild1 = new TreeNode(2);
+            rootNode.right = rootRightChild1;
+
+            //Assign the left child to rootRightChild
+            TreeNode rightChild1Left = new TreeNode(3);
+            rootRightChild1.left = rightChild1Left;
+
+            var result = binaryTreePreorderTraversal.PreorderTraversal(rootNode);
         }
     }
 }
