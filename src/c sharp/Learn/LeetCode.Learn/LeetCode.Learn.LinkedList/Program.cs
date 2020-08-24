@@ -43,6 +43,33 @@ namespace LeetCode.Learn.LinkedList
 
             //12.FlattenMultilevelDoublyLinkedList
             FlattenMultilevelDoublyLinkedList_Main();
+
+            //13.
+
+
+            //14.RotateListProblem
+            RotateListProblem_Main();
+        }
+
+        private static void RotateListProblem_Main()
+        {
+
+            RotateListProblem rotateListProblem = new RotateListProblem();
+            //Chain A build
+            ListNode NodeAHead = new ListNode(1);
+            ListNode NodeA1 = new ListNode(2);
+            NodeAHead.next = NodeA1;
+
+            ListNode NodeA8 = new ListNode(3);
+            NodeA1.next = NodeA8;
+
+            ListNode NodeA4 = new ListNode(4);
+            NodeA8.next = NodeA4;
+
+            ListNode NodeA5 = new ListNode(5);
+            NodeA4.next = NodeA5;
+
+            var result = rotateListProblem.RotateRight(NodeAHead, 10);
         }
 
         private static void FlattenMultilevelDoublyLinkedList_Main()
