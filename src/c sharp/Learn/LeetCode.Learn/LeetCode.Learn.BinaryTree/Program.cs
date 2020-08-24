@@ -27,7 +27,36 @@ namespace LeetCode.Learn.BinaryTree
             Console.WriteLine("Hello World!");
 
             //1.BinaryTreePreorderTraversal
-            BinaryTreePreorderTraversal_Main();
+            //BinaryTreePreorderTraversal_Main();
+
+            //2.BinaryTreeInorderTraversal
+            BinaryTreeInorderTraversal_Main();
+        }
+
+        private static void BinaryTreeInorderTraversal_Main()
+        {
+            BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
+
+            //Test 1
+            /*Input: [1,null,2,3]
+            1
+             \
+              2
+             /
+            3
+            Output: [1,3,2]
+            */
+
+            TreeNode rootNode = new TreeNode(1);
+
+            TreeNode rootRightChild1 = new TreeNode(2);
+            rootNode.right = rootRightChild1;
+
+            //Assign the left child to rootRightChild
+            TreeNode rightChild1Left = new TreeNode(3);
+            rootRightChild1.left = rightChild1Left;
+
+            var result = binaryTreeInorderTraversal.InorderTraversal(rootNode);
         }
 
         private static void BinaryTreePreorderTraversal_Main()
