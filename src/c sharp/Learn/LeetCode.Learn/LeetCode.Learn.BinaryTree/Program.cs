@@ -39,7 +39,89 @@ namespace LeetCode.Learn.BinaryTree
             //BinaryTreeLevelOrderTraversal_Main();
 
             //5.MaximumDepthOfBinaryTree
-            MaximumDepthOfBinaryTree_Main();
+            //MaximumDepthOfBinaryTree_Main();
+
+            //6.SymmetricTree
+            SymmetricTree_Main();
+        }
+
+        private static void SymmetricTree_Main()
+        {
+            SymmetricTree symmetricTree = new SymmetricTree();
+            //Test 1
+            /*Input: [3,9,20,null,null,15,7],
+                 1
+                / \
+               2   2
+              / \ / \
+             3  4 4  3
+            
+            Output: true
+            */
+
+            TreeNode rootNode = new TreeNode(1);
+
+            //Root-> Left
+            TreeNode rootLeftChild1 = new TreeNode(2);
+            rootNode.left = rootLeftChild1;
+
+            //Root -> Right
+            TreeNode rootRightChild1 = new TreeNode(2);
+            rootNode.right = rootRightChild1;
+
+            //Root -> Left ->left and Root -> Left ->right
+            rootLeftChild1.left = new TreeNode(3);
+            rootLeftChild1.right = new TreeNode(4);
+
+            //Root -> right ->left and Root -> right ->right
+            rootRightChild1.left = new TreeNode(4);
+            rootRightChild1.right = new TreeNode(3);
+
+            var result = symmetricTree.IsSymmetric(rootNode);
+
+            //Test 2
+            /*
+                 1
+                / \
+               2   2
+              / \ / \
+             3  4 4  
+
+            Output = fasle
+            
+             */
+            //Set one left child as null;
+            rootRightChild1.right = null;
+            result = symmetricTree.IsSymmetric(rootNode);
+
+            //Test 3
+            // input [1]
+            //output is true
+            rootNode.left = null;
+            rootNode.right = null;
+            result = symmetricTree.IsSymmetric(rootNode);
+
+            //TEst 4
+            //input [1,2,3]
+            rootNode.left = new TreeNode(2);
+            rootNode.right = new TreeNode(3);
+
+            result = symmetricTree.IsSymmetric(rootNode);
+
+            //Test 5
+            rootNode.left = new TreeNode(2);
+            rootNode.right = new TreeNode(2);
+
+            rootNode.left.left = new TreeNode(3);
+            rootNode.left.right = new TreeNode(3);
+
+            result = symmetricTree.IsSymmetric(rootNode);
+
+            //Test 6
+
+            rootNode.left = new TreeNode(0);
+            rootNode.right = null;
+            result = symmetricTree.IsSymmetric(rootNode);
         }
 
         private static void MaximumDepthOfBinaryTree_Main()
