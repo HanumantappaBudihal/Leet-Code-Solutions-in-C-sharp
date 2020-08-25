@@ -36,7 +36,43 @@ namespace LeetCode.Learn.BinaryTree
             //BinaryTreePostorderTraversal_Main();
 
             //4.BinaryTreeLevelOrderTraversal
-            BinaryTreeLevelOrderTraversal_Main();
+            //BinaryTreeLevelOrderTraversal_Main();
+
+            //5.MaximumDepthOfBinaryTree
+            MaximumDepthOfBinaryTree_Main();
+        }
+
+        private static void MaximumDepthOfBinaryTree_Main()
+        {
+            MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
+
+            //Test 1
+            /*Input: [3,9,20,null,null,15,7],
+                3
+               / \
+              9  20
+                /  \
+               15   7
+            
+            Output: 3
+            */
+
+            TreeNode rootNode = new TreeNode(3);
+
+            TreeNode rootLeftChild1 = new TreeNode(9);
+            rootNode.left = rootLeftChild1;
+
+            TreeNode rootRightChild1 = new TreeNode(20);
+            rootNode.right = rootRightChild1;
+
+            //Assign the left child to rootRightChild
+            TreeNode rightChild1Left = new TreeNode(15);
+            rootRightChild1.left = rightChild1Left;
+            //Right child to rootRightChild
+            TreeNode rightChild1Right = new TreeNode(7);
+            rootRightChild1.right = rightChild1Right;
+
+            var result = maximumDepthOfBinaryTree.MaxDepth(rootNode);
         }
 
         private static void BinaryTreeLevelOrderTraversal_Main()
