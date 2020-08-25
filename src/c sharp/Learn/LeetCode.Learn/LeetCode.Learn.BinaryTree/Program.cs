@@ -42,7 +42,50 @@ namespace LeetCode.Learn.BinaryTree
             //MaximumDepthOfBinaryTree_Main();
 
             //6.SymmetricTree
-            SymmetricTree_Main();
+            //SymmetricTree_Main();
+
+            //7.PathSum
+            PathSum_Main();
+        }
+
+        private static void PathSum_Main()
+        {
+            PathSum pathSum = new PathSum();
+            //Test 1
+            /*              
+            Given the below binary tree and sum = 22,
+
+                  5
+                 / \
+                4   8
+               /   / \
+              11  13  4
+             /  \      \
+            7    2      1
+            return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
+             */
+
+            TreeNode rootNode = new TreeNode(5);
+
+            //Root-> Left
+            TreeNode rootLeftChild1 = new TreeNode(4);
+            rootNode.left = rootLeftChild1;
+
+            //Root -> Right
+            TreeNode rootRightChild1 = new TreeNode(8);
+            rootNode.right = rootRightChild1;
+
+            //Root -> Left ->left and Root -> Left ->right
+            rootLeftChild1.left = new TreeNode(11);
+            rootLeftChild1.left.left = new TreeNode(7);
+            rootLeftChild1.left.right = new TreeNode(2);
+
+            //Root -> right ->left and Root -> right ->right
+            rootRightChild1.left = new TreeNode(13);
+            rootRightChild1.right = new TreeNode(4);
+            rootRightChild1.right.left = new TreeNode(1);
+
+            var result = pathSum.HasPathSum(rootNode,22);
         }
 
         private static void SymmetricTree_Main()

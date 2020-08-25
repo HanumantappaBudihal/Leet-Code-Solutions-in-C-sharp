@@ -45,7 +45,7 @@ namespace LeetCode.Learn.BinaryTree.Problems
             if (root.right != null && root.left is null)
                 return false;
 
-            (int leftSumTreeSum, int rightSumTreeSum) = FindOutTheHighAndSumOfNodes(root);
+            (int leftSumTreeSum, int rightSumTreeSum) = FindOutTheHighAndSumOfNodes_Method2(root);
 
             return (leftSumTreeSum == rightSumTreeSum);
         }
@@ -59,13 +59,13 @@ namespace LeetCode.Learn.BinaryTree.Problems
                 int leftSumTreeSum1 = 0, rightSumTreeSum1 = 0, leftSumTreeSum2 = 0, rightSumTreeSum2 = 0;
                 if (root.left != null)
                 {
-                    (leftSumTreeSum1, rightSumTreeSum1) = FindOutTheHighAndSumOfNodes(root.left);
+                    (leftSumTreeSum1, rightSumTreeSum1) = FindOutTheHighAndSumOfNodes_Method2(root.left);
                     leftSumTreeSum1 = leftSumTreeSum1 + root.left.val;
                 }
 
                 if (root.right != null)
                 {
-                    (leftSumTreeSum2, rightSumTreeSum2) = FindOutTheHighAndSumOfNodes(root.right);
+                    (leftSumTreeSum2, rightSumTreeSum2) = FindOutTheHighAndSumOfNodes_Method2(root.right);
                     rightSumTreeSum2 = rightSumTreeSum2 + root.right.val;
                 }
 
