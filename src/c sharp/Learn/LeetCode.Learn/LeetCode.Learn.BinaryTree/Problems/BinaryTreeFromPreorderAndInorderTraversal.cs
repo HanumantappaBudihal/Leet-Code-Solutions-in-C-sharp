@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-
-namespace LeetCode.Learn.BinaryTree.Problems
+﻿namespace LeetCode.Learn.BinaryTree.Problems
 {
-    //Problem statement : 
+    //Problem statement : https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/943
+    //Solution : https://leetcode.com/submissions/detail/386701437/
     class BinaryTreeFromPreorderAndInorderTraversal
     {
         //Method 1
