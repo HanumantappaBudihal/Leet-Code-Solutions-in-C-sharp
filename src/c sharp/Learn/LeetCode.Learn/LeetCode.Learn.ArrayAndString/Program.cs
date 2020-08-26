@@ -14,7 +14,39 @@ namespace LeetCode.Learn.ArrayAndString
             //FindPivotIndex_Main();
 
             //2.LargestNumberAtLeastTwiceOfOthers
-            LargestNumberAtLeastTwiceOfOthers_Main();
+            //LargestNumberAtLeastTwiceOfOthers_Main();
+
+            //3.PlusOne Problem
+            PlusOne_Main();
+        }
+
+        private static void PlusOne_Main()
+        {
+            PlusOneProblem plusOneProblem = new PlusOneProblem();
+
+            //Test case 1
+            //Input: nums = [1,2,3]
+            //Output: [1,2,4]
+
+            var numbers = new int[] { 1, 2, 3 };
+            var result = plusOneProblem.PlusOne(numbers);
+
+            //Test case 2
+            /*Input: nums = [4,3,2,1]
+            Output: [4,3,2,2]*/
+
+            numbers = new int[] { 4, 3, 2, 1 };
+            result = plusOneProblem.PlusOne(numbers);
+
+            //Test case 3
+            // input : [0]
+            // output : [1]
+            result = plusOneProblem.PlusOne(new int[] { 0 });
+
+            //Test case 4
+            //input [9,9]
+            //outpurt [1,0,0]
+            result = plusOneProblem.PlusOne(new int[] { 9, 9 });
         }
 
         private static void LargestNumberAtLeastTwiceOfOthers_Main()
