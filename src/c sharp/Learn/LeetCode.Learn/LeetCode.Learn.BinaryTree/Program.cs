@@ -45,7 +45,63 @@ namespace LeetCode.Learn.BinaryTree
             //SymmetricTree_Main();
 
             //7.PathSum
-            PathSum_Main();
+            //PathSum_Main();
+
+            //8.BinaryTreeFromInorderAndPostorderTraversal
+            //BinaryTreeFromInorderAndPostorderTraversal_Main();
+
+            //9.BinaryTreeFromPreorderAndInorderTraversal
+            BinaryTreeFromPreorderAndInorderTraversal_Main();
+        }
+
+        private static void BinaryTreeFromPreorderAndInorderTraversal_Main()
+        {
+            BinaryTreeFromPreorderAndInorderTraversal binaryTreeFromPreorderAndInorderTraversal = new BinaryTreeFromPreorderAndInorderTraversal();
+            /*             
+            For example, given
+
+            preorder = [3,9,20,15,7]
+            inorder = [9,3,15,20,7]
+            Return the following binary tree:
+
+                3
+               / \
+              9  20
+                /  \
+               15   7
+             */
+            var inorder = new int[] { 9, 3, 15, 20, 7 };
+            var preorder = new int[] { 3, 9, 20, 15, 7 };
+
+            var root = binaryTreeFromPreorderAndInorderTraversal.BuildTree(preorder, inorder);
+
+            //Test 2
+            inorder = new int[] { -1 };
+            preorder = new int[] { -1 };
+
+            root = binaryTreeFromPreorderAndInorderTraversal.BuildTree(preorder, inorder);
+        }
+
+        private static void BinaryTreeFromInorderAndPostorderTraversal_Main()
+        {
+            BinaryTreeFromInorderAndPostorderTraversal binaryTreeFromInorderAndPostorderTraversal = new BinaryTreeFromInorderAndPostorderTraversal();
+            /*             
+            For example, given
+
+            inorder = [9,3,15,20,7]
+            postorder = [9,15,7,20,3]
+            Return the following binary tree:
+
+                3
+               / \
+              9  20
+                /  \
+               15   7
+             */
+            var inorder = new int[] { 9, 3, 15, 20, 7 };
+            var postorder = new int[] { 9, 15, 7, 20, 3 };
+
+            var result = binaryTreeFromInorderAndPostorderTraversal.BuildTree(inorder, postorder);
         }
 
         private static void PathSum_Main()
@@ -85,7 +141,7 @@ namespace LeetCode.Learn.BinaryTree
             rootRightChild1.right = new TreeNode(4);
             rootRightChild1.right.left = new TreeNode(1);
 
-            var result = pathSum.HasPathSum(rootNode,22);
+            var result = pathSum.HasPathSum(rootNode, 22);
         }
 
         private static void SymmetricTree_Main()
