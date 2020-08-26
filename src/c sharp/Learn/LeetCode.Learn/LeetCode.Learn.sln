@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.DecisionTree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Recusion2", "LeetCode.Learn.Recusion2\LeetCode.Learn.Recusion2.csproj", "{3BD41ADF-788A-4B9C-B7B0-714161B34F2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.N-aryTree", "LeetCode.Learn.N-aryTree\LeetCode.Learn.N-aryTree.csproj", "{22A4D5FA-ED4E-47EB-B241-BA784EAB2DD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{3BD41ADF-788A-4B9C-B7B0-714161B34F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BD41ADF-788A-4B9C-B7B0-714161B34F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BD41ADF-788A-4B9C-B7B0-714161B34F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A4D5FA-ED4E-47EB-B241-BA784EAB2DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A4D5FA-ED4E-47EB-B241-BA784EAB2DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A4D5FA-ED4E-47EB-B241-BA784EAB2DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A4D5FA-ED4E-47EB-B241-BA784EAB2DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
