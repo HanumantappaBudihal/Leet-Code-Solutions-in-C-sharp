@@ -17,8 +17,22 @@ namespace LeetCode.Learn.ArrayAndString
             //LargestNumberAtLeastTwiceOfOthers_Main();
 
             //3.PlusOne Problem
-            PlusOne_Main();
+            //PlusOne_Main();
+
+            //4.DiagonalTraverse
+            DiagonalTraverse_Main();
         }
+
+        private static void DiagonalTraverse_Main()
+        {
+            DiagonalTraverse diagonalTraverse = new DiagonalTraverse();
+            int[,] input = new int[3, 4] {{0, 1, 2, 3} ,   /*  initializers for row indexed by 0 */
+                                          {4, 5, 6, 7} ,   /*  initializers for row indexed by 1 */
+                                          {8, 9, 10, 11}};   /*  initializers for row indexed by 2 */
+
+            var result = diagonalTraverse.FindDiagonalOrder(input);
+        }
+
 
         private static void PlusOne_Main()
         {
