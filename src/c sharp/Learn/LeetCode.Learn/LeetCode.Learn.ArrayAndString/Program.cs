@@ -1,6 +1,7 @@
 ﻿using LeetCode.Learn.ArrayAndString.Problems;
 using Microsoft.VisualBasic;
 using System;
+using System.Globalization;
 
 namespace LeetCode.Learn.ArrayAndString
 {
@@ -26,14 +27,18 @@ namespace LeetCode.Learn.ArrayAndString
         private static void DiagonalTraverse_Main()
         {
             DiagonalTraverse diagonalTraverse = new DiagonalTraverse();
-            int[,] input = new int[3, 4] {{0, 1, 2, 3} ,   /*  initializers for row indexed by 0 */
-                                          {4, 5, 6, 7} ,   /*  initializers for row indexed by 1 */
-                                          {8, 9, 10, 11}};   /*  initializers for row indexed by 2 */
+            int[][] input = new int[3][] { new int[4] { 1, 2, 3, 4 },
+                                           new int[4] { 5, 6, 7, 8 },
+                                           new int[4] { 9, 10, 11, 12 } };
 
             var result = diagonalTraverse.FindDiagonalOrder(input);
+
+            input = new int[3][] { new int[3] { 1, 2, 3 },
+                                   new int[3] { 4, 5, 6 },
+                                   new int[3] { 7, 8, 9 } };
+
+            result = diagonalTraverse.FindDiagonalOrder(input);
         }
-
-
         private static void PlusOne_Main()
         {
             PlusOneProblem plusOneProblem = new PlusOneProblem();

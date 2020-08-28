@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LeetCode.Learn.ArrayAndString.Problems
@@ -10,33 +11,53 @@ namespace LeetCode.Learn.ArrayAndString.Problems
     class DiagonalTraverse
     {
         //TODO : Need to complete the implementation part
-        public int[] FindDiagonalOrder(int[,] matrix)
+        public int[] FindDiagonalOrder(int[][] matrix)
         {
             var dictionary = new Dictionary<int, List<int>>();
             int indexSum = 0;
-            for (int i = 0; i < matrix.GetUpperBound(0); i++)
+
+            //for (int i = 0; i <= matrix.GetUpperBound(0); i++)
+            int i = 0;
+            foreach (var item in matrix)
             {
                 indexSum = i;
-                for (int j = 0; j < matrix.GetUpperBound(1); j++)
+                int j = 0;
+                foreach (var items in item)
                 {
-                    indexSum += j;
+                    indexSum = i + j;
 
                     if (dictionary.ContainsKey(indexSum))
                     {
-                        dictionary[indexSum].Add(matrix[i, j]);
+                        dictionary[indexSum].Add(items);
                     }
                     else
                     {
                         var newList = new List<int>();
-                        newList.Add(matrix[i, j]);
+                        newList.Add(items);
                         dictionary.Add(indexSum, newList);
                     }
-                }
-            }
-            
-            var result = dictionary.Values;
 
-            return null;
+                    j++;
+                }
+
+                i++;
+            }
+
+            List<int> result = new List<int>();
+
+            int counter = 0;
+            foreach (var item in dictionary)
+            {
+                var elements = item.Value.ToList();
+                if ((counter % 2) == 0)
+                    elements.Reverse();
+
+                result.AddRange(elements);
+
+                counter++;
+            }
+
+            return result.ToArray();
         }
     }
 }
