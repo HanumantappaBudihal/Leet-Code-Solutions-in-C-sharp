@@ -56,6 +56,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Recusion2.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Trie.TestCases", "LeetCode.Learn.Trie.TestCases\LeetCode.Learn.Trie.TestCases.csproj", "{9356146C-D070-4C2E-91D0-4E46CD685DD8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{141D64A7-AADF-4F4F-BDFE-C11032D488BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Foundation", "LeetCode.Learn.Foundation\LeetCode.Learn.Foundation.csproj", "{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,9 +162,16 @@ Global
 		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{691CBFB4-2AA3-4A3B-B03C-FE3DFB6CD997} = {141D64A7-AADF-4F4F-BDFE-C11032D488BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A896314-2B95-4607-9C74-E67EAC0C2EE1}
