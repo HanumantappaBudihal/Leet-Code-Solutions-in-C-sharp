@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Arrays101.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.BinarySearchTree.TestCases", "LeetCode.Learn.BinarySearchTree.TestCases\LeetCode.Learn.BinarySearchTree.TestCases.csproj", "{71A270B9-DEAB-4678-A029-63791C66B87D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.BinaryTree.TestCases", "LeetCode.Learn.BinaryTree.TestCases\LeetCode.Learn.BinaryTree.TestCases.csproj", "{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{71A270B9-DEAB-4678-A029-63791C66B87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A270B9-DEAB-4678-A029-63791C66B87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A270B9-DEAB-4678-A029-63791C66B87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
