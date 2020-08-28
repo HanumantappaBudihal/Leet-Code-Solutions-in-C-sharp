@@ -40,6 +40,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.BinarySearch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.BinaryTree.TestCases", "LeetCode.Learn.BinaryTree.TestCases\LeetCode.Learn.BinaryTree.TestCases.csproj", "{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.DecisionTree.TestCases", "LeetCode.Learn.DecisionTree.TestCases\LeetCode.Learn.DecisionTree.TestCases.csproj", "{317D4786-88BE-41A5-B6F7-6C0831EF5A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.HashTable.TestCases", "LeetCode.Learn.HashTable.TestCases\LeetCode.Learn.HashTable.TestCases.csproj", "{3A582E87-F1D3-432E-97C8-AC53AB0FB399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.LinkedList.TestCases", "LeetCode.Learn.LinkedList.TestCases\LeetCode.Learn.LinkedList.TestCases.csproj", "{02F97AA0-5098-449A-9694-AAFFFC7A73A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.N-aryTree.TestCases", "LeetCode.Learn.N_aryTree.TestCases\LeetCode.Learn.N-aryTree.TestCases.csproj", "{D980A3E5-47CF-401E-8389-0CDC82D293E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.QueueAndStack.TestCases", "LeetCode.Learn.QueueAndStack.TestCases\LeetCode.Learn.QueueAndStack.TestCases.csproj", "{DC3E4E0C-A3EC-4668-9E1D-9C1B12A0EB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Recursion1.TestCases", "LeetCode.Learn.Recursion1.TestCases\LeetCode.Learn.Recursion1.TestCases.csproj", "{5300629C-3735-42AA-AE9C-C3D4C189383F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Recusion2.TestCases", "LeetCode.Learn.Recusion2.TestCases\LeetCode.Learn.Recusion2.TestCases.csproj", "{03E2883A-65D1-46B4-BDD4-C5924A34D76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Learn.Trie.TestCases", "LeetCode.Learn.Trie.TestCases\LeetCode.Learn.Trie.TestCases.csproj", "{9356146C-D070-4C2E-91D0-4E46CD685DD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +126,38 @@ Global
 		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89982CDA-80D0-4FC9-901D-A7FECE1C3EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317D4786-88BE-41A5-B6F7-6C0831EF5A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317D4786-88BE-41A5-B6F7-6C0831EF5A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317D4786-88BE-41A5-B6F7-6C0831EF5A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317D4786-88BE-41A5-B6F7-6C0831EF5A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A582E87-F1D3-432E-97C8-AC53AB0FB399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A582E87-F1D3-432E-97C8-AC53AB0FB399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A582E87-F1D3-432E-97C8-AC53AB0FB399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A582E87-F1D3-432E-97C8-AC53AB0FB399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F97AA0-5098-449A-9694-AAFFFC7A73A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F97AA0-5098-449A-9694-AAFFFC7A73A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F97AA0-5098-449A-9694-AAFFFC7A73A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F97AA0-5098-449A-9694-AAFFFC7A73A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D980A3E5-47CF-401E-8389-0CDC82D293E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D980A3E5-47CF-401E-8389-0CDC82D293E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D980A3E5-47CF-401E-8389-0CDC82D293E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D980A3E5-47CF-401E-8389-0CDC82D293E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3E4E0C-A3EC-4668-9E1D-9C1B12A0EB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3E4E0C-A3EC-4668-9E1D-9C1B12A0EB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3E4E0C-A3EC-4668-9E1D-9C1B12A0EB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3E4E0C-A3EC-4668-9E1D-9C1B12A0EB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5300629C-3735-42AA-AE9C-C3D4C189383F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5300629C-3735-42AA-AE9C-C3D4C189383F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5300629C-3735-42AA-AE9C-C3D4C189383F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5300629C-3735-42AA-AE9C-C3D4C189383F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E2883A-65D1-46B4-BDD4-C5924A34D76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E2883A-65D1-46B4-BDD4-C5924A34D76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E2883A-65D1-46B4-BDD4-C5924A34D76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E2883A-65D1-46B4-BDD4-C5924A34D76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9356146C-D070-4C2E-91D0-4E46CD685DD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
