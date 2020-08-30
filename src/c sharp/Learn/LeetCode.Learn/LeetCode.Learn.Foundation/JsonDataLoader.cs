@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace LeetCode.Learn.Foundation
 {
@@ -22,7 +22,8 @@ namespace LeetCode.Learn.Foundation
 
         private static T ConvertJsonStreamToObject<T>(StreamReader fileStream)
         {
-            return (T)JsonSerializer.Deserialize(fileStream.ToString(), typeof(T));
+            JsonSerializer jsonSerializer = new JsonSerializer();
+            return (T)jsonSerializer.Deserialize(fileStream, typeof(T));
         }
 
         private static StreamReader GetStreamReader(string filePath)
