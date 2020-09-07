@@ -21,7 +21,21 @@ namespace LeetCode.Learn.ArrayAndString
             //PlusOne_Main();
 
             //4.DiagonalTraverse
-            DiagonalTraverse_Main();
+            //DiagonalTraverse_Main();
+
+            //5.SpiralMatrix
+            SpiralMatrix_Main();
+        }
+
+        private static void SpiralMatrix_Main()
+        {
+            SpiralMatrix spiralMatrix = new SpiralMatrix();
+
+            int[][] input = new int[3][] { new int[4] { 1, 2, 3, 4 },
+                                           new int[4] { 5, 6, 7, 8 },
+                                           new int[4] { 9, 10, 11, 12 } };
+
+            var result = spiralMatrix.SpiralOrder(input);
         }
 
         private static void DiagonalTraverse_Main()
